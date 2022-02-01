@@ -69,6 +69,8 @@ new_name = MyTable(name='Frodo', power=7)
 session.add(new_name)
 session.commit()
 
+
+
 for elem in session.query(MyTable).order_by(MyTable.power):
     print(elem.name, elem.power)
 
